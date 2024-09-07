@@ -1,0 +1,78 @@
+Second tris = new Second();
+        System.out.println(tris.d);
+        
+        
+        Main fastlane = new Main();
+        Main fastlane2 = new Main();
+        fastlane.x = 16;
+        System.out.println(fastlane.x);
+        System.out.println(fastlane2.x);
+        
+        
+        method();
+        Main pedal = new Main();
+       pedal.metal();
+       
+       Second myCar = new Second();
+       myCar.fullThrottle();
+       myCar.speed(200);
+
+
+
+
+
+
+
+
+
+
+
+ public Order(boolean filled, double cost, String shippingMethod) {
+		if (cost > 24.00) {
+      System.out.println("High value item!");
+    } else {
+      System.out.println("Low value item!");
+    }
+    isFilled = filled;
+    billAmount = cost;
+    shipping = shippingMethod;
+  }
+  
+  public void ship() {
+    if (isFilled) {
+      System.out.println("Shipping");
+    } else {
+      System.out.println("Order not ready");
+    }
+    
+    double shippingCost = calculateShipping();
+    
+    System.out.println("Shipping cost: ");
+    System.out.println(shippingCost);
+  }
+   public static int summation(int n) {
+          int sum = 0;
+        for (int i = 0; i <= n; i++) {
+        sum += i;
+            System.err.println(sum);
+        }
+   return 0;}
+  public double calculateShipping() {
+    double shippingCost;
+    switch (shipping) {
+      case "Regular":
+        shippingCost = 0;
+        break;
+      case "Express":    
+        shippingCost = 1.75;
+        break;
+      default:
+        shippingCost = .50; 
+    }
+    return shippingCost;
+ 	}
+
+
+
+
+
